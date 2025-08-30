@@ -4,3 +4,8 @@ let sum = firstcard + secondcard
 
 console.log(sum);
 
+if (sum < 21) {
+  console.log();
+  
+}
+
