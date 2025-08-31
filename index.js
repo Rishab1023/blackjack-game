@@ -21,4 +21,10 @@ if (sum < 21) {
 
 console.log(message);
 
+let blackjackEl = document.getElementById("BlackJackEl")
+let cardsEl = document.getElementById("cards")
+let sumEl = document.getElementById("sum")
 
+function Play() {
+  cardsEl.innerText += 
+}
