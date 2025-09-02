@@ -1,3 +1,20 @@
-h1{
- color: rgb(1, 112, 20);
+body{
+  background-color: green;
+  display: flex;
+  text-align: center;
 }
+.body{
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 50px;
+}
+h1{
+ color: rgb(63, 217, 255);
+}
+.elements{
+  font: bold;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{}
