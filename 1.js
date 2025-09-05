@@ -83,15 +83,32 @@ cards.push(6)
 
 // Push the newMessage to the messages array, and then log out the array
 
-let messages = [
-    "Hey, how's it going?",        
-    "I'm great, thank you! How about you?",
-    "All good. Been working on my portfolio lately."
-]
+// let messages = [
+//     "Hey, how's it going?",        
+//     "I'm great, thank you! How about you?",
+//     "All good. Been working on my portfolio lately."
+// ]
 
-let newMessage = "Same here!"
+// let newMessage = "Same here!"
 
-messages.push(newMessage)
+// // messages.push(newMessage)
 
-console.log(messages);
+// // console.log(messages);
 
+// messages.pop();
+
+// console.log(messages);
+
+// for loops
+// Count to ten!
+
+// example
+
+
+
+
+
+for (let count = 0; count < 11; count++) {
+        console.log(count);
+    
+}

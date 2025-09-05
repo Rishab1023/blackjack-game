@@ -38,5 +38,6 @@ function newcard() {
   console.log("Drawing a new card from the deck");
   let thirdcard = 10
   sum = sum + thirdcard;
+  cards.push(thirdcard)
   renderGame()
 }
