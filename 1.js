@@ -8,10 +8,10 @@
 
 // // if (age < 21) {
 // //   console.log("you cannot enter the club!");
-  
+
 // // } else {
 // //   console.log("Welcome");
-  
+
 // // }
 
 // // Check if the person is elegible for a birthday card from the King! (100)
@@ -24,13 +24,13 @@
 
 // // if (age < 100) {
 // //   console.log("Not elegible");
-  
+
 // // } else if (age === 100) {
 // //   console.log("Here is your birthday card from the King!");
-  
+
 // // } else {
 // //   console.log("Not elegible, you have already gotten one");
-  
+
 // // }
 
 
@@ -72,9 +72,9 @@
 // Create an array that describes yourself. Use the three primitive data types you've learned
 // It should contain your name (string), your age (number), and whether you like pizza (boolean)
 
-let cards = [1,4]
+// let cards = [1,4]
 
-cards.push(6)
+// cards.push(6)
 
 // console.log(cards);
 
@@ -110,5 +110,5 @@ cards.push(6)
 
 for (let count = 0; count < 11; count++) {
         console.log(count);
-    
-}
+
+} 
