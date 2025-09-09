@@ -1,38 +1,37 @@
-// // // check if person is old enough to enter the nightclub (21)
-// // // log a suitable message to the console in both cases
+// check if person is old enough to enter the nightclub (21)
+// log a suitable message to the console in both cases
 
-// // let age = 20
+// let age = 20
 
-// // // if less than 21 -> "you cannot enter the club! "
-// // // else            -> "Welcome"
+// if less than 21 -> "you cannot enter the club! "
+// else            -> "Welcome"
 
-// // if (age < 21) {
-// //   console.log("you cannot enter the club!");
+// if (age < 21) {
+//   console.log("you cannot enter the club!");
 
-// // } else {
-// //   console.log("Welcome");
+// } else {
+//   console.log("Welcome");
 
-// // }
+// }
 
-// // Check if the person is elegible for a birthday card from the King! (100)
+// Check if the person is elegible for a birthday card from the King! (100)
 
 // let age = 101
 
-// // if less than 100    -> "Not elegible"
-// // else if exactly 100 -> "Here is your birthday card from the King!"
-// // else                -> "Not elegible, you have already gotten one"
+// if less than 100    -> "Not elegible"
+// else if exactly 100 -> "Here is your birthday card from the King!"
+// else                -> "Not elegible, you have already gotten one"
 
-// // if (age < 100) {
-// //   console.log("Not elegible");
+// if (age < 100) {
+//   console.log("Not elegible");
 
-// // } else if (age === 100) {
-// //   console.log("Here is your birthday card from the King!");
+// } else if (age === 100) {
+//   console.log("Here is your birthday card from the King!");
 
-// // } else {
-// //   console.log("Not elegible, you have already gotten one");
+// } else {
+//   console.log("Not elegible, you have already gotten one");
 
-// // }
-
+// }
 
 // console.log(4 === 3)  // false
 // console.log(5 > 2)    // true
@@ -80,11 +79,10 @@
 
 // here cards are objects, push is method
 
-
 // Push the newMessage to the messages array, and then log out the array
 
 // let messages = [
-//     "Hey, how's it going?",        
+//     "Hey, how's it going?",
 //     "I'm great, thank you! How about you?",
 //     "All good. Been working on my portfolio lately."
 // ]
@@ -104,11 +102,10 @@
 
 // example
 
+//   Start          finish      step size
+// for (let count = 0; count < 21; count++) {
+//   console.log(count);
+// }
+let random = Math.random();
 
-
-
-
-for (let count = 0; count < 11; count++) {
-        console.log(count);
-
-} 
+console.log(random);
