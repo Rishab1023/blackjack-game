@@ -6,8 +6,6 @@ let sum = firstcard + secondcard;
 let hasBlackjack = false;
 let isAlive = true;
 let message = "";
-let random_number = Math.random();
-console.log(random_number);
 // Game logic
 let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
@@ -33,43 +31,55 @@ function renderGame() {
   console.log(message);
   messageEl.textContent = message;
 }
+
 function newcard() {
+  let random_number = Math.random();
+  console.log(random_number);
+  let thirdcard = ""
+  if (random_number <= 0.10) {
+    thirdcard = 1;
+    console.log(thirdcard);
+  }
+  if (random_number <= 0.20 && random_number > 0.10) {
+    thirdcard = 2;
+    console.log(thirdcard);
+  }
+  if (random_number <= 0.30 && random_number > 0.20) {
+    thirdcard = 3;
+    console.log(thirdcard);
+  }
+  if (random_number <= 0.40 && random_number > 0.30) {
+    thirdcard = 4;
+    console.log(thirdcard);
+  }
+  if (random_number <= 0.50 && random_number > 0.40) {
+    thirdcard = 5;
+    console.log(thirdcard);
+  }
+  if (random_number <= 0.60 && random_number > 0.50) {
+    thirdcard = 6;
+    console.log(thirdcard);
+  }
+  if (random_number <= 0.70 && random_number > 0.60) {
+    thirdcard = 7;
+    console.log(thirdcard);
+  }
+  if (random_number <= 0.80 && random_number > 0.70) {
+    thirdcard = 8;
+    console.log(thirdcard);
+  }
+  if (random_number <= 0.90 && random_number > 0.80) {
+    thirdcard = 9;
+    console.log(thirdcard);
+  }
+  if(random_number > 0.90) {
+    thirdcard = 10;
+    console.log(thirdcard);
+  }
   console.log("Drawing a new card from the deck");
-  let thirdcard = 10;
+  console.log(thirdcard);
+  
   sum = sum + thirdcard;
   cards.push(thirdcard);
   renderGame();
-}
-
-function random() {
-  if(random<=0.1){
-  thirdcard = 1
-  }
-  if(random<=0.2 and random>0.1){
-  thirdcard = 2 
-  }
-  if(random<=0.3 and random>0.2){
-  thirdcard = 3 
-  }
-  if(random<=0.4 and random>0.3){
-  thirdcard = 4 
-  }
-  if(random<=0.5 and random>0.4){
-  thirdcard = 5 
-  }
-  if(random<=0.6 and random>0.5){
-  thirdcard = 6 
-  }
-  if(random<=0.7 and random>0.6){
-  thirdcard = 7 
-  }
-  if(random<=0.8 and random>0.7){
-  thirdcard = 8
-  }
-  if(random<=0.9 and random>0.8){
-  thirdcard = 9 
-  }
-  else{
-  thirdcard = 10
-  }
 }
