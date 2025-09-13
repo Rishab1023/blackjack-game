@@ -6,11 +6,6 @@ let sum = firstcard + secondcard;
 let hasBlackjack = false;
 let isAlive = true;
 let message = "";
-<<<<<<< HEAD
-=======
-let random_card = Math.random();
-console.log(random_card);
->>>>>>> parent of 7d50b18 (Refactor random number generation and add random card selection logic)
 // Game logic
 let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
