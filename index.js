@@ -33,52 +33,7 @@ function renderGame() {
 }
 
 function newcard() {
-  let random_number = Math.random();
-  console.log(random_number);
-  let thirdcard = ""
-  if (random_number <= 0.10) {
-    thirdcard = 1;
-    console.log(thirdcard);
-  }
-  if (random_number <= 0.20 && random_number > 0.10) {
-    thirdcard = 2;
-    console.log(thirdcard);
-  }
-  if (random_number <= 0.30 && random_number > 0.20) {
-    thirdcard = 3;
-    console.log(thirdcard);
-  }
-  if (random_number <= 0.40 && random_number > 0.30) {
-    thirdcard = 4;
-    console.log(thirdcard);
-  }
-  if (random_number <= 0.50 && random_number > 0.40) {
-    thirdcard = 5;
-    console.log(thirdcard);
-  }
-  if (random_number <= 0.60 && random_number > 0.50) {
-    thirdcard = 6;
-    console.log(thirdcard);
-  }
-  if (random_number <= 0.70 && random_number > 0.60) {
-    thirdcard = 7;
-    console.log(thirdcard);
-  }
-  if (random_number <= 0.80 && random_number > 0.70) {
-    thirdcard = 8;
-    console.log(thirdcard);
-  }
-  if (random_number <= 0.90 && random_number > 0.80) {
-    thirdcard = 9;
-    console.log(thirdcard);
-  }
-  if(random_number > 0.90) {
-    thirdcard = 10;
-    console.log(thirdcard);
-  }
-  console.log("Drawing a new card from the deck");
-  console.log(thirdcard);
-  
+  let thirdcard = 10
   sum = sum + thirdcard;
   cards.push(thirdcard);
   renderGame();
