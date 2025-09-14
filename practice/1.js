@@ -119,20 +119,30 @@
 //   console.log(count);
 // }
 
-let messages = [
-    "Hey, how's it going?",        
-    "I'm great, thank you! How about you?",
-    "All good. Been working on my portfolio lately.",
-    "Same here!",
-    "Great to hear",
-    "🙌",
-    "fdfd",
-    "fdfd",
-    "fdfd",
-    "fdfd",
-]
+// let messages = [
+//     "Hey, how's it going?",        
+//     "I'm great, thank you! How about you?",
+//     "All good. Been working on my portfolio lately.",
+//     "Same here!",
+//     "Great to hear",
+//     "🙌",
+//     "fdfd",
+//     "fdfd",
+//     "fdfd",
+//     "fdfd",
+// ]
 
-for(let i = 0; i < messages.length; i += 1) {
-  console.log(messages[i]);
+// for(let i = 0; i < messages.length; i += 1) {
+//   console.log(messages[i]);
+  
+// }
+
+let cards = [7,4,5,8,4,63,6,3,5,7,9,2,5];
+
+// create a for loop that logs out all the cards in the array
+// use cards.length to specify how long the loop should run
+
+for (let i = 0; i < cards.length; i++) {
+   console.log(cards[i]);
   
 }
