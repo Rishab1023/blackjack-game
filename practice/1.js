@@ -137,12 +137,42 @@
   
 // }
 
-let cards = [7,4,5,8,4,63,6,3,5,7,9,2,5];
+// let cards = [7,4,5,8,4,63,6,3,5,7,9,2,5];
 
 // create a for loop that logs out all the cards in the array
 // use cards.length to specify how long the loop should run
 
-for (let i = 0; i < cards.length; i++) {
-   console.log(cards[i]);
+// for (let i = 0; i < cards.length; i++) {
+//    console.log(cards[i]);
   
+// }
+
+let player1Time = 102
+let player2Time = 107
+
+// cmd+d - ctrl+d
+function getFastestRaceTime() {
+    if (player1Time < player2Time) {
+        return player1Time
+    } else if (player2Time < player1Time) {
+        return player2Time
+    } else {
+        return player1Time
+    }
 }
+
+// let fastestRace = getFastestRaceTime()
+// console.log(fastestRace)
+
+// Write a function that returns the total race time
+// Call/invoke the function and store the returned value in a new variable
+// Finally, log the variable out
+
+function TotalRaceTime() {
+  return player1Time + player2Time;
+}
+
+let totalRaceTime = TotalRaceTime()
+
+console.log(totalRaceTime);
+
