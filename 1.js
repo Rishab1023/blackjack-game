@@ -126,10 +126,13 @@ let messages = [
     "Same here!",
     "Great to hear",
     "🙌",
-    "fdfd"
+    "fdfd",
+    "fdfd",
+    "fdfd",
+    "fdfd",
 ]
 
 for(let i = 0; i < messages.length; i += 1) {
-  console.log(messages);
+  console.log(messages[i]);
   
 }
