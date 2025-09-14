@@ -7,7 +7,7 @@ let hasBlackjack = false;
 let isAlive = true;
 let message = "";
 // Game logic
-let messageEl = document.getElementById("message-el");
+let messageEl = document.querySelector("#message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
 
