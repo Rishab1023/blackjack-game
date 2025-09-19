@@ -13,25 +13,25 @@ console.log(cards);
 
 function getRandomCard() {
   let RandomNumber = Math.floor(Math.random() * 13) + 1
-  if(RandomNumber > 10){
+  if (RandomNumber > 10) {
     return 10
-  } else if ( RandomNumber === 1){
+  } else if (RandomNumber === 1) {
     return 11
-  }else {
+  } else {
     return RandomNumber
   }
 }
 
 // start button
 function startGame() {
-  
+
   if (isAlive === false) {
-      isAlive = true
-      let firstcard = getRandomCard();
-      let secondcard = getRandomCard();
-      cards = [firstcard , secondcard];
-      sum = firstcard + secondcard;
-      renderGame();
+    isAlive = true
+    let firstcard = getRandomCard();
+    let secondcard = getRandomCard();
+    cards = [firstcard, secondcard];
+    sum = firstcard + secondcard;
+    renderGame();
   }
 }
 
@@ -39,7 +39,7 @@ function startGame() {
 function renderGame() {
   cardsEl.textContent = "Cards: ";
   for (let i = 0; i < cards.length; i++) {
-      cardsEl.textContent += cards[i] + " "
+    cardsEl.textContent += cards[i] + " "
   }
   sumEl.textContent = "sum : " + sum; // renders the sum of the cards on the page
   // logic for the message that is rendered on the page
@@ -58,11 +58,11 @@ function renderGame() {
 }
 // this function produces a new card aand pushes it to the cards array
 function newcard() {
-  if(isAlive === true && sum < 21){
-      let thirdcard = getRandomCard();
-      sum = sum + thirdcard;
-      cards.push(thirdcard);
-      renderGame();
+  if (isAlive === true && sum < 21) {
+    let thirdcard = getRandomCard();
+    sum = sum + thirdcard;
+    cards.push(thirdcard);
+    renderGame();
   }
 
 }
