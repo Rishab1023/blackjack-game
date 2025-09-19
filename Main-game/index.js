@@ -24,15 +24,14 @@ function getRandomCard() {
 
 // start button
 function startGame() {
-
-  isAlive = true
-  let firstcard = getRandomCard();
-  let secondcard = getRandomCard();
-  cards = [firstcard , secondcard];
-  sum = firstcard + secondcard;
-  renderGame();
-
-
+  if(isAlive === false){
+      isAlive = true
+      let firstcard = getRandomCard();
+      let secondcard = getRandomCard();
+      cards = [firstcard , secondcard];
+      sum = firstcard + secondcard;
+      renderGame();
+  }
 }
 
 // this function renders the game
@@ -48,6 +47,7 @@ function renderGame() {
   } else if (sum === 21) {
     message = "Congrats, You have won";
     hasBlackjack = true;
+    isAlive = false
   } else if (sum > 21) {
     message = "You have lost";
     isAlive = false;
