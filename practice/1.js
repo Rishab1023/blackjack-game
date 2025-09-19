@@ -102,7 +102,7 @@
 
 // example
 
-  // Start          finish      step size
+// Start          finish      step size
 // for (let count = 10; count < 21; count++) {
 //   console.log(count);
 // }
@@ -134,7 +134,7 @@
 
 // for(let i = 0; i < messages.length; i += 1) {
 //   console.log(messages[i]);
-  
+
 // }
 
 // let cards = [7,4,5,8,4,63,6,3,5,7,9,2,5];
@@ -144,22 +144,22 @@
 
 // for (let i = 0; i < cards.length; i++) {
 //    console.log(cards[i]);
-  
+
 // }
 
-let player1Time = 102
-let player2Time = 107
+// let player1Time = 102
+// let player2Time = 107
 
-// cmd+d - ctrl+d
-function getFastestRaceTime() {
-    if (player1Time < player2Time) {
-        return player1Time
-    } else if (player2Time < player1Time) {
-        return player2Time
-    } else {
-        return player1Time
-    }
-}
+// // cmd+d - ctrl+d
+// function getFastestRaceTime() {
+//     if (player1Time < player2Time) {
+//         return player1Time
+//     } else if (player2Time < player1Time) {
+//         return player2Time
+//     } else {
+//         return player1Time
+//     }
+// }
 
 // let fastestRace = getFastestRaceTime()
 // console.log(fastestRace)
@@ -168,11 +168,63 @@ function getFastestRaceTime() {
 // Call/invoke the function and store the returned value in a new variable
 // Finally, log the variable out
 
-function TotalRaceTime() {
-  return player1Time + player2Time;
+// function TotalRaceTime() {
+//   return player1Time + player2Time;
+// }
+
+// let totalRaceTime = TotalRaceTime()
+// console.log(totalRaceTime);
+
+// let randomNumber = Math.random() * 6
+
+// console.log(randomNumber);
+
+/*
+
+What does Math.random() do?
+
+Answer = It random a random number between 0 and 1 not including 1
+
+
+*/
+
+
+/*
+
+Q. In which range will our random number be?
+
+from : 0
+to : 5.9999
+
+*/
+
+
+// floored numbers
+
+// let floorednumber = Math.floor(4.34374343)
+// console.log(floorednumber);
+
+
+
+// let randomNumber = Math.floor(Math.random() * 6) + 1
+// console.log(randomNumber);
+
+/*
+
+write down all the values randomNumber can hold now!
+
+Ans = 0,1,2,3,4,5
+
+*/
+let btn = document.querySelector("#result")
+
+function rollDice(){
+  let randomNumber = Math.floor(Math.random() * 6) + 1
+  // return randomNumber
+  btn.textContent = "Result :-"  + randomNumber;
 }
 
-let totalRaceTime = TotalRaceTime()
+let Dice = rollDice()
 
-console.log(totalRaceTime);
+console.log(Dice);
 
