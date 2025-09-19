@@ -1,31 +1,42 @@
 // Game elements
-let firstcard = getRandomCard();
-let secondcard = getRandomCard();
-let cards = [firstcard, secondcard]; // array ordered list of items
-let sum = firstcard + secondcard;
+let cards = []; // array ordered list of items
+let sum = 0;
 let hasBlackjack = false;
-let isAlive = true;
+let isAlive = false;
 let message = "";
 // Game logic
 let messageEl = document.querySelector("#message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
+console.log(cards);
+
 
 function getRandomCard() {
-  return 5;
+  let RandomNumber = Math.floor(Math.random() * 13) + 1
+  if(RandomNumber > 10){
+    return 10
+  } else if ( RandomNumber === 1){
+    return 11
+  }else {
+    return RandomNumber
+  }
 }
 
 // start button
 function startGame() {
+  isAlive = true
+  let firstcard = getRandomCard();
+  let secondcard = getRandomCard();
+  cards = [firstcard , secondcard];
+  sum = firstcard + secondcard;
   renderGame();
 }
 function renderGame() {
-  console.log(firstcard, "", secondcard);
   cardsEl.textContent = "Cards: ";
   for (let i = 0; i < cards.length; i++) {
       cardsEl.textContent += cards[i] + " "
   }
-  sumEl.textContent = "sum" + " " + sum;
+  sumEl.textContent = "sum : " + sum;
   if (sum < 21) {
     message = "Do you want to draw another card?";
   } else if (sum === 21) {
@@ -40,8 +51,11 @@ function renderGame() {
 }
 
 function newcard() {
-  let thirdcard = getRandomCard();
-  sum = sum + thirdcard;
-  cards.push(thirdcard);
-  renderGame();
+  if(isAlive === true && sum < 21){
+      let thirdcard = getRandomCard();
+      sum = sum + thirdcard;
+      cards.push(thirdcard);
+      renderGame();
+  }
+
 }
