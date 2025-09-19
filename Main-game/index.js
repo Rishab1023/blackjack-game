@@ -24,7 +24,8 @@ function getRandomCard() {
 
 // start button
 function startGame() {
-  if(isAlive === false){
+  
+  if (isAlive === false) {
       isAlive = true
       let firstcard = getRandomCard();
       let secondcard = getRandomCard();
