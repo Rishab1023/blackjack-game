@@ -24,22 +24,25 @@ function getRandomCard() {
 
 // start button
 function startGame() {
-  if (isAlive === false) {
-      isAlive = true
-      let firstcard = getRandomCard();
-      let secondcard = getRandomCard();
-      cards = [firstcard , secondcard];
-      sum = firstcard + secondcard;
-      renderGame();
-  }
+
+  isAlive = true
+  let firstcard = getRandomCard();
+  let secondcard = getRandomCard();
+  cards = [firstcard , secondcard];
+  sum = firstcard + secondcard;
+  renderGame();
+
 
 }
+
+// this function renders the game
 function renderGame() {
   cardsEl.textContent = "Cards: ";
   for (let i = 0; i < cards.length; i++) {
       cardsEl.textContent += cards[i] + " "
   }
-  sumEl.textContent = "sum : " + sum;
+  sumEl.textContent = "sum : " + sum; // renders the sum of the cards on the page
+  // logic for the message that is rendered on the page
   if (sum < 21) {
     message = "Do you want to draw another card?";
   } else if (sum === 21) {
@@ -50,9 +53,9 @@ function renderGame() {
     isAlive = false;
   }
   console.log(message);
-  messageEl.textContent = message;
+  messageEl.textContent = message; // this renders the message according the conditions
 }
-
+// this function produces a new card aand pushes it to the cards array
 function newcard() {
   if(isAlive === true && sum < 21){
       let thirdcard = getRandomCard();
