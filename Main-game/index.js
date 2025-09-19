@@ -51,11 +51,11 @@ function renderGame() {
 }
 
 function newcard() {
-  if(isAlive === true && sum < 21){
+  // if(isAlive === true && sum < 21){
       let thirdcard = getRandomCard();
       sum = sum + thirdcard;
       cards.push(thirdcard);
       renderGame();
-  }
+  // }
 
 }
