@@ -24,12 +24,15 @@ function getRandomCard() {
 
 // start button
 function startGame() {
-  isAlive = true
-  let firstcard = getRandomCard();
-  let secondcard = getRandomCard();
-  cards = [firstcard , secondcard];
-  sum = firstcard + secondcard;
-  renderGame();
+  if (isAlive === false) {
+      isAlive = true
+      let firstcard = getRandomCard();
+      let secondcard = getRandomCard();
+      cards = [firstcard , secondcard];
+      sum = firstcard + secondcard;
+      renderGame();
+  }
+
 }
 function renderGame() {
   cardsEl.textContent = "Cards: ";
