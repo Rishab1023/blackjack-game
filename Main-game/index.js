@@ -58,7 +58,7 @@ function renderGame() {
 }
 // this function produces a new card aand pushes it to the cards array
 function newcard() {
-  if (isAlive === true && sum < 21 && hasBlackjack === false) {
+  if (isAlive === true && sum < 21) {
     let thirdcard = getRandomCard();
     sum = sum + thirdcard;
     cards.push(thirdcard);
