@@ -48,6 +48,7 @@ function renderGame() {
   } else if (sum === 21) {
     message = "Congrats, You have won";
     hasBlackjack = true;
+    isAlive = false
   } else if (sum > 21) {
     message = "You have lost";
     isAlive = false;
